@@ -30,5 +30,9 @@
             <input type="submit" value="Submit"/>
             <input type="reset" value="Reset"/>
         </springform:form>
+<!--            <script>
+                var f = "${forjs}";
+                alert(f);
+            </script>-->
     </body>
 </html>

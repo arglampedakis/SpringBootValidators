@@ -6,7 +6,6 @@
 package com.example.SpringBootValidators.model;
 
 import javax.validation.constraints.Email;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 /**
@@ -14,12 +13,10 @@ import javax.validation.constraints.Size;
  * @author glamb
  */
 public class User {
-    
+
     @Size(min = 4, max = 45, message = "Name must be between 4 and 45 characters")
-    @NotNull(message = "required")
     private String name;
     @Email(message = "Not email")
-    @NotNull(message = "required")
     private String email;
 
     public User() {
@@ -40,6 +37,5 @@ public class User {
     public void setEmail(String email) {
         this.email = email;
     }
-    
-    
+
 }
