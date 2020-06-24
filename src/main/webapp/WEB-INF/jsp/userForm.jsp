@@ -6,6 +6,7 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="springform" uri="http://www.springframework.org/tags/form"%>
+<%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,7 +15,7 @@
         <style>
             .error{
                 color: red;
-                
+
             }
         </style>
     </head>
@@ -30,9 +31,10 @@
             <input type="submit" value="Submit"/>
             <input type="reset" value="Reset"/>
         </springform:form>
-<!--            <script>
-                var f = "${forjs}";
-                alert(f);
-            </script>-->
-    </body>
+    <spring:message code="email.wrong" />
+    <!--            <script>
+                    var f = "${forjs}";
+                    alert(f);
+                </script>-->
+</body>
 </html>

@@ -31,7 +31,8 @@ public class UserValidator implements Validator {
 
         // user mail must ends with gmail.com
         if (!user.getEmail().endsWith("@gmail.com")) {
-            errors.rejectValue("email", "email.wrong");
+//            errors.rejectValue("email", "email.wrong");
+            errors.rejectValue("email", "email.wrong", "validator message");
         }
 
     }
